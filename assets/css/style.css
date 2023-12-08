@@ -1,0 +1,336 @@
+
+
+/* Стиль шрифта для всего текста */
+*{
+  font-family: "Montserrat-Regular";
+}
+
+/* Убрал маркеры у li */
+li{
+  list-style-type: none;
+}
+
+/* Высота, чтобы футер был прибит к низу и плавная прокрутка страницы */
+html{
+  height: 100%;
+}
+
+/* Тело */
+body{
+  height: 100%;
+  margin: 0;
+}
+
+/* Блок всей страницы */
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Шапка сайта */
+.header{
+  font-weight: 400;
+}
+
+/* Секция шапки №1 */
+.header__preheader{
+  background-color: #EBF0F4;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 310px 20px 310px;
+}
+
+/* Блоки секции шапки №1 */
+.header__preheader > div{
+  display: flex;
+  justify-content: space-between;
+  width: 1301px;
+  color: #535C74;
+  margin: 0 auto;
+}
+.header__preheader > div > span{
+  display: flex;
+  column-gap: 10px;
+  height: 21px;
+  align-items: center;
+  line-height: 20.8px;
+  font-size: 16px;
+}
+
+/* Картинки блоков секции шапки №1 */
+.header__preheader > div > span > img{
+  width: 16px; height: 16px;
+}
+
+/* Секция шапки №2 */
+.header__head{
+  height: 60px;
+  padding: 30px 310px 30px 310px;
+  margin: 0 auto;
+  width: 1300px;
+}
+.header__head-block{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Навигационное меню */
+.nav{
+  display: flex;
+  color: gray;
+  column-gap: 20px;
+  line-height: 26px;
+  font-size: 18px;
+  color: #384054;
+}
+
+/* Бургер-меню */
+.burger{
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: center;
+  width: 40px; height: 40px;
+}
+.burger span{
+  height: 3px; width: 35px;
+  transform: scale(1);
+  background-color: #384054;
+}
+.burger::before, .burger::after{
+  content: '';
+  position: absolute;
+  height: 3px; width: 35px;
+  transition: all .3s ease;
+  background-color: #384054;
+}
+.burger::before{
+  top: 10px;
+}
+.burger::after{
+  bottom: 10px;
+}
+.burger.active span{
+  transform: scale(0);
+}
+.burger.active::before{
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -70%);
+}
+.burger.active::after{
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 70%);
+}
+
+/* Основная часть сайта */
+.main{
+  flex: 1 1 auto;
+}
+
+/* Слайдер с текстом и кнопкой */
+.slider{
+  width: 1920px; height: 800px;
+  position: relative;
+  margin: 0 auto;
+}
+/* Картинки */
+.item img{
+  width: 100%; height: 800px;
+}
+/* Кнопки вперед и назад */
+.previous, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  border-radius: 6px;
+  background-color: #E3EFFA;
+  width: 60px; height: 60px;
+  text-align: center;
+}
+.previous > img{
+  transform: translateY(15px);
+}
+.next > img{
+  transform: translateY(15px);
+}
+.previous{
+  left: 60px;
+
+}
+.next{
+  right: 60px;
+  transform: rotate(180deg);
+}
+/* Анимация слайдов */
+.item{
+  animation-name: slidesAnim;
+  animation-duration: 1s;
+}
+
+/* Анимация слайдов */
+@keyframes slidesAnim {
+  from {
+  opacity: 0.4
+  }
+  to {
+  opacity: 1
+  }
+}
+
+/* Блок с текстом и кнопкой */
+.slider-block{
+  width: 860px; height: 100px;
+  position: absolute;
+  z-index: 1;
+  left: 311px; top: 212px;
+}
+.slider-block > p:nth-of-type(1){
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 78px;
+  color: white;
+  margin: 0px;
+}
+.slider-block > p:nth-of-type(2){
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 52px;
+  color: white;
+  margin-top: 11px;
+}
+.slider-block > button{
+  width: 250px; height: 66px;
+  border-radius: 6px;
+  padding: 20px 25px 20px 25px;
+  background-color: #E3EFFA;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #384054;
+  cursor: pointer;
+}
+
+/* Секция основной части сайта №1 */
+.main-section{
+  width: 1301px;
+  margin: 0 auto;
+}
+.main-section > p{
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 52px;
+  margin-top: 50px; margin-bottom: 20px;
+  color: #384054;
+}
+
+/* Блок №1 Блок с картинками и текстами */
+.images-txt{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.images-txt > div{
+  position: relative;
+}
+.images-txt > div > h2{
+  position: absolute;
+  font-weight: 500;
+  font-size: 30.3px;
+  line-height: 39px;
+  color: white;
+  top: 294px; left: 32px;
+}
+.images-txt > div > p{
+  position: absolute;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: white;
+  top: 344px; left: 31px;
+}
+.block-btn{
+  position: absolute;
+  right: 30px; bottom: 35px;
+  border: 2px #EBF0F4 solid;
+  border-radius: 4px;
+  width: 32px; height: 32px;
+  text-align: center;
+}
+.block-btn > img{
+  width: 9px; height: 18px;
+}
+.block-btn > img{
+  transform: translateY(8px);
+}
+
+/* Низ сайта */
+.footer{
+  background-color: #384054;
+  padding: 60px 0px 40px 0px;
+  height: 185px;
+  margin-top: 100px;
+}
+
+/* Первая секция футера */
+.footer__main{
+  display: flex;
+  column-gap: 155px;
+  height: 185px;
+  justify-content: center;
+}
+
+/* Картинки в первом блоке футера */
+.footer-links{
+  display: flex;
+  justify-content:space-between;
+  margin-top: 30px;
+  height: 40px;
+}
+
+/* Секция в секции футера №1 */
+.footer__section-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 155px;
+}
+
+/* Текст 2 блока футера */
+.text-footer-one{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  color: #EBF0F4;
+  line-height: 20.8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* Текст 3 блока футера */
+.text-footer-two{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  color: #EBF0F4;
+  line-height: 20.8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Четвёртый блок секции футера №1 */
+.footer-store{
+  width: 207px; height: 136px;
+}
+
+/* Первая картинка четвертого блока футера */
+.footer-store > a:nth-of-type(1) > img{
+  margin-bottom: 20px;
+}
+
+.desk-none{
+  display: none;
+}

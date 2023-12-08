@@ -1,0 +1,475 @@
+/*==========  Desktop First Method  ==========*/
+
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1919px){
+
+/* Секция шапки №1 */
+.header__preheader{
+	justify-content: center;
+  padding: 20px 0px 20px 0px;
+}
+
+/* Блоки секции шапки №1 */
+.header__preheader > div{
+  width: 800px;
+}
+
+/* Секция шапки №2 */
+.header__head{
+	justify-content: space-between;
+	width: 800px;
+	margin: 0 auto;
+	padding: 30px 0px 30px 0px;
+}
+.header__head-block > a > img{
+  width: 150px;
+}
+
+/* Навигационное меню */
+.nav{
+  column-gap: 15px;
+  line-height: 26px;
+  font-size: 17px;
+  color: #384054;
+}
+
+/* Слайдер с текстом и кнопкой */
+.slider{
+  width: 900px; height: 500px;
+}
+/* Картинки */
+.item img{
+	height: 500px;
+}
+/* Кнопки вперед и назад */
+.previous, .next{
+  margin-top: -20px;
+  width: 30px; height: 40px;
+}
+.previous > img{
+  transform: translateY(10px);
+	width: 10px; height: 20px;
+}
+.next > img{
+  transform: translateY(10px);
+	width: 10px; height: 20px;
+}
+.previous{
+  left: 30px;
+}
+.next{
+  right: 30px;
+}
+
+/* Блок с текстом и кнопкой */
+.slider-block{
+  width: 370px;
+  left: 145px; top: 130px;
+}
+.slider-block > p:nth-of-type(1){
+  font-size: 28px;
+  line-height: 51px;
+}
+.slider-block > p:nth-of-type(2){
+  font-size: 18.8px;
+  line-height: 32px;
+  margin-top: 5px;
+}
+.slider-block > button{
+  width: 120px; height: 46px;
+	margin-top: 5px;
+  padding: 0px 25px 0px 25px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* Секция основной части сайта №1 */
+.main-section{
+  width: 800px;
+}
+.main-section > p{
+  font-size: 25px;
+  margin-top: 40px; margin-bottom: 10px;
+}
+
+/* Блок №1 Блок с картинками и текстами */
+.images-txt > div{
+  width: 390px;
+}
+.images-txt > div > img{
+	width: 390px;
+}
+.images-txt > div > h2{
+  font-size: 25.3px;
+  top: 130px; left: 20px;
+}
+.images-txt > div > p{
+  font-size: 17px;
+  top: 174px; left: 20px;
+}
+
+/* Низ сайта */
+.footer{
+  margin-top: 60px;
+	padding: 60px 0px 40px 0px;
+}
+
+/* Первая секция футера */
+.footer__main{
+	justify-content: space-between;
+	width: 800px;
+	margin: 0 auto;
+	column-gap: 30px;
+}
+.footer__main > div:nth-of-type(1) > a > img{
+	width: 150px;
+}
+
+/* Секция в секции футера №1 */
+.footer__section-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 55px;
+}
+
+/* Текст 2 блока футера */
+.text-footer-one{
+  line-height: 18px;
+  font-size: 16px;
+}
+/* Текст 3 блока футера */
+.text-footer-two{
+  line-height: 18px;
+  font-size: 16px;
+}
+
+/* Четвёртый блок секции футера №1 */
+.footer-store{
+  width: 150px;
+}
+.footer-store > a > img{
+  width: 150px;
+}
+
+.desk-none{
+  display: none;
+}
+
+}
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 991px){
+
+/* Затемнение экрана */
+.black{
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 1762px;
+  top: 144px;
+  z-index: 40;
+  background-color: #000;
+  opacity: 0.6;
+}
+
+/* Блоки секции шапки №1 */
+.header__preheader > div{
+  justify-content: center;
+  width: 100vw;
+}
+.header__preheader > div > span:nth-of-type(2){
+  display: none;
+}
+
+/* Секция шапки №2 */
+.header__head{
+  height: 40px;
+  width: 100vw;
+  padding: 20px 0px 20px 0px;
+}
+.header__head-block{
+  padding: 0px 0px 0px 0px;
+  width: 90vw;
+  margin: 0 auto;
+  column-gap: 10.5%;
+}
+.header__head-gap{
+  justify-content: flex-end;
+}
+.header__head-block > a > img{
+  width: 170px; height: 40px;
+}
+
+/* Навигационное меню */
+.nav{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  width: 100%; height: 156px;
+  top: 141px; left: 0; right: 0; bottom: 0;
+  row-gap: 20px;
+  padding: 20px 0px 40px 0px;
+  align-items: center;
+  line-height: 24.38px;
+  font-size: 20px;
+  color: #384054;
+  background-color: #ffffff;
+  z-index: 50;
+  overflow-y: auto;
+  animation: burgerAnimation .4s;  
+}
+.nav li{
+  width: 192px;
+}
+@keyframes burgerAnimation{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.visible{
+  display: flex;
+}
+
+/* Бургер-меню */
+.burger{
+  display: flex;
+}
+
+/* Слайдер с текстом и кнопкой */
+.slider{
+  width: 100vw; height: 400px;
+}
+/* Картинки */
+.item img{
+  height: 400px;
+}
+/* Кнопки вперед и назад */
+.previous, .next{
+  margin-top: -20px;
+  width: 20px; height: 40px;
+  background-color: rgba(1, 1, 1, 0.2);
+}
+.previous > img{
+  transform: translateY(10px);
+  width: 10px; height: 20px;
+}
+.next > img{
+  transform: translateY(10px);
+  width: 10px; height: 20px;
+}
+.previous{
+  left: 0px;
+}
+.next{
+  right: 0px;
+}
+
+/* Блок с текстом и кнопкой */
+.slider-block{
+  width: 86%;
+  left: 7%; top: 100px;
+}
+.slider-block > p:nth-of-type(1){
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31.2px;
+}
+.slider-block > p:nth-of-type(2){
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.slider-block > button{
+  width: 95%; height: 66px;
+  padding: 20px 25px 20px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+/* Секция основной части сайта №1 */
+.main-section{
+  width: 90vw;
+}
+.main-section > p{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  margin-top: 50px; margin-bottom: 20px;
+}
+
+/* Блок №1 Блок с картинками и текстами */
+.images-txt{
+  row-gap: 10px;
+  flex-direction: column;
+}
+.images-txt > div{
+  width: 90vw;
+}
+.images-txt > div > img{
+  width: 90vw;  height: 323px;
+}
+.images-txt > div > h2{
+  font-size: 24px;
+  line-height: 31px;
+  top: 220px; left: 8%;
+}
+.images-txt > div > p{
+  font-size: 18px;
+  line-height: 23px;
+  top: 260px; left: 8%;
+}
+.block-btn{
+  top: 260px; right: 8%;
+}
+
+/* Низ сайта */
+.footer{
+  padding: 0px 0px 0px 0px;
+  margin-top: 40px;
+  height: 561px;
+  width: 100vw;
+}
+
+/* Первая секция футера */
+.footer__main{
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  height: 461px;
+  justify-content: center;
+  width: 90vw;
+  padding: 40px 0px 40px 0px;
+}
+.footer__main > div:nth-of-type(1){
+  margin: 0 auto;
+  order: 2;
+}
+.footer__main > div:nth-of-type(1) > a > img{
+  width: 168px; height: 40px;
+}
+
+/* Картинки в первом блоке футера */
+.footer-links{
+  display: flex;
+  justify-content:space-between;
+  width: 168px; height: 40px;
+  order: 2;
+  margin-top: 16px;
+}
+
+/* Секция в секции футера №1 */
+.footer__section-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  order: 1;
+  column-gap: 20px;
+}
+
+/* Текст 2 блока футера */
+.text-footer-one{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  color: #EBF0F4;
+  line-height: 15.6px;
+  font-size: 12px;
+  font-weight: 500;
+  width: 117px; height: 160px;
+}
+.text-footer-one > li{
+  width: 117px; height: 160px;
+}
+/* Текст 3 блока футера */
+.text-footer-two{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  color: #EBF0F4;
+  line-height: 15.6px;
+  font-size: 12px;
+  font-weight: 500;
+  width: 166px; height: 160px;
+}
+.text-footer-two > li{
+  width: 166px; height: 160px;
+}
+
+/* Четвёртый блок секции футера №1 */
+.footer-store{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  order: 3;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+/* Первая картинка четвертого блока футера */
+.footer-store > a:nth-of-type(1) > img{
+  margin-bottom: 0px;
+}
+
+.desk-none{
+  display: flex;
+}
+
+.footer-com{
+  order: 4;
+  column-gap: 30px;
+  width: 100%; height: 13px;
+  justify-content: center;
+}
+.footer-com > p{
+  color: #EBF0F4;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 13px;
+  margin: 0;
+}
+
+
+
+
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+  .mobile-none{
+    display: none;
+  }
+
+
+}

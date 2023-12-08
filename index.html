@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>LOOK ART</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <link rel=stylesheet href="./assets/css/style.css">
+  <link rel=stylesheet href="./assets/css/fonts.css">
+  <link rel=stylesheet href="./assets/css/media.css">
+  <link rel="shortcut icon" href="./assets/pic/icon/icon.png">
+</head>
+
+<body>
+
+  <!-- Блок страницы -->
+  <div class="wrapper">
+    <!-- Шапка сайта -->
+    <header class="header">
+      <!-- Секция шапки №1 -->
+      <section class="header__preheader">
+        <!-- Блоки секции шапки №1 -->
+        <div>
+          <span><img src="./assets/pic/header/icon_phone.png" alt="Иконка телефона">+7 (916) 556-85-56</span>
+          <span><img src="./assets/pic/header/icon_mail.png" alt="Иконка почты">Lookart@internet.ru</span>
+        </div>
+      </section>
+
+      <!-- Секция шапки №2 -->
+      <section class="header__head">
+        <div class="header__head-block">
+          <!-- Логотип -->
+          <a href="#"><img src="./assets/pic/header/logo.png" alt="Логотип"></a>
+          <!-- Навигационное меню -->
+          <nav class="nav">
+            <li>Пластификация</li>
+            <li>Холст</li>
+            <li>Фотобанк</li>
+            <li>Доставка и оплата</li>
+          </nav>
+          <!-- Картинки -->
+          <div class="mobile-none">
+            <img src="./assets/pic/header/icon_person.png" alt="Иконка покупателя">
+            <img src="./assets/pic/header/icon_cart.png" alt="Иконка корзины">
+          </div>
+          <!-- Бургер-меню -->
+          <div class="burger">
+            <span></span>
+          </div>
+        </div>
+      </section>
+
+    </header>
+
+    <!-- Основная часть сайта -->
+    <main class="main">
+
+      <!-- Слайдер с текстом и кнопкой -->
+			<div class="slider">
+        <!-- Блок с текстом и кнопкой -->
+        <div class="slider-block">
+          <p>ИЗГОТОВЛЕНИЕ ФОТОГРАФИЙ</p>
+          <p>Наполни свой дом уютом или сделай подарок своим близким</p>
+          <button type="button">Перейти в каталог</button>
+        </div>
+				<!-- Слайды -->
+				<div class="item">
+					<img src="./assets/pic/sliderMain/02.hero.png">
+				</div>
+
+				<div class="item">
+					<img src="./assets/pic/sliderMain/02.hero.png">
+				</div>
+
+				<div class="item">
+					<img src="./assets/pic/sliderMain/02.hero.png">
+				</div>
+
+				<div class="item">
+					<img src="./assets/pic/sliderMain/02.hero.png">
+				</div>
+				<!-- Кнопки - стрелочки -->
+				<a class="previous" onclick="previousSlide()"><img src="./assets/pic/sliderMain/Vector.png" alt="Стрелка влево"></a>
+				<a class="next" onclick="nextSlide()"><img src="./assets/pic/sliderMain/Vector.png" alt="Стрелка вправо"></a>
+			</div>
+
+      <!-- Секция основной части сайта №1  -->
+      <section class="main-section">
+        <!-- Текст -->
+        <p>УСЛУГИ</p>
+        <!-- Блок №1 Блок с картинками и текстами -->
+        <div class="images-txt">
+          <!-- Блоки с картинками и текстами -->
+          <div>
+            <h2>Пластификация</h2>
+            <p>от 2 650 р</p>
+            <img src="./assets/pic/main/one.png" alt="Пластификация">
+            <a class="block-btn" href="#"><img src="./assets/pic/main/Vector-white.png" alt="Стрелка вправо"></a>
+          </div>
+          <div class="mobile-none">
+            <h2>Холст</h2>
+            <p>от 2 650 р</p>
+            <img src="./assets/pic/main/two.png" alt="Холст">
+            <a class="block-btn" href="#"><img src="./assets/pic/main/Vector-white.png" alt="Стрелка вправо"></a>
+          </div>
+          <div>
+            <h2>Фотобанк</h2>
+            <p>от 2 650 р</p>
+            <img src="./assets/pic/main/three.png" alt="Фотобанк">
+            <a class="block-btn" href="#"><img src="./assets/pic/main/Vector-white.png" alt="Стрелка вправо"></a>
+          </div>
+          <div class="mobile-none">
+            <h2>Поддарочный комплект</h2>
+            <p>от 2 650 р</p>
+            <img src="./assets/pic/main/four.png" alt="Поддарочный комплект">
+            <a class="block-btn" href="#"><img src="./assets/pic/main/Vector-white.png" alt="Стрелка вправо"></a>
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- Низ сайта -->
+    <footer class="footer">
+
+      <!-- Секция футера №1 -->
+      <section class="footer__main">
+        <!-- Первый блок секции футера №1 -->
+        <div>
+          <a href="#"><img src="./assets/pic/footer/logo.png" alt="logotype"></a>
+
+          <!-- Картинки первой секции футера -->
+          <div class="footer-links">
+            <a href="#"><img src="./assets/pic/footer/inst.png" alt="Instagram"></a>
+            <a href="#"><img src="./assets/pic/footer/vk.png" alt="Vkontakte"></a>
+            <a href="#"><img src="./assets/pic/footer/twit.png" alt="Twitter"></a>
+            <a href="#"><img src="./assets/pic/footer/tlg.png" alt="Telegramm"></a>
+          </div>
+
+        </div>
+
+        <!-- Секция в секции футера №1 -->
+        <section class="footer__section-text">
+          <!-- Второй блок секции футера №1 -->
+          <div class="text-footer-one">
+            <li>О нас</li>
+            <li>Контакты</li>
+            <li>Новости</li>
+            <li>Вопрос-ответ</li>
+            <li>Доставка и оплата</li>
+          </div>
+          <!-- Третий блок секции футера №1 -->
+          <div class="text-footer-two">
+            <li>Отзывы</li>
+            <li>Примеры работ</li>
+            <li>Наша продукция</li>
+            <li>Фото для интерьера</li>
+            <li>Оформление фотографий</li>
+          </div>
+        </section>
+
+        <!-- Четвёртый блок секции футера №1 -->
+        <div class="footer-store">
+          <a href="#"><img src="./assets/pic/footer/googleplay.png" alt="Google Play"></a>
+          <a href="#"><img src="./assets/pic/footer/appstore.png" alt="App Store"></a>
+        </div>
+
+        <div class="footer-com desk-none">
+          <p>ООО “Лукарт”</p>
+          <p>ИНН: 7717202311</p>
+          <p>КПП: 7712121466</p>
+        </div>
+
+        <div class="hidden"></div>
+
+      </section>
+
+    </footer>
+
+  </div>
+
+  <script>
+
+// Slider
+	/* Устанавливаем индекс слайда по умолчанию */
+	let slideIndex = 1;
+	showSlides(slideIndex);
+	/* Увеличиваем индекс на 1 и показывается следующий слайд*/
+	function nextSlide() {
+		showSlides(slideIndex += 1);
+	}
+	/* Уменьшает индекс на 1 и показывается предыдущий слайд*/
+	function previousSlide() {
+		showSlides(slideIndex -= 1);  
+	}
+	/* Устанавливаем текущий слайд */
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+	/* Функция перелистывания */
+	function showSlides(n) {
+		let i;
+		let slides = document.getElementsByClassName("item");
+		
+		if (n > slides.length) {
+			slideIndex = 1
+		}
+		if (n < 1) {
+			slideIndex = slides.length
+		}
+		
+		/* Проходим по каждому слайду в цикле for */
+		for (let slide of slides) {
+			slide.style.display = "none";
+		}  
+		slides[slideIndex - 1].style.display = "block";  
+	}
+
+// Бургер-меню
+  document.querySelector('.burger').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('.nav').classList.toggle('visible');
+    document.querySelector('.header__head-block').classList.toggle('header__head-gap');
+    document.querySelector('.hidden').classList.toggle('black');
+  })
+
+  </script>
+
+</body>
+
+</html>
